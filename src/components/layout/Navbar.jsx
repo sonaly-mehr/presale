@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#181818] lg:bg-opacity-0 py-6 lg:py-0">
-    <div className="lg:mt-10 container">
+    <div className="lg:mt-10 container mx-auto">
       <div className="lg:bg-[#181818] rounded-[50px] lg:p-3 flex justify-between items-center">
         <div>
           <img src={logo} alt="" className="w-[235px] h-[50px] lg:w-[330px] lg:h-[72px]" />

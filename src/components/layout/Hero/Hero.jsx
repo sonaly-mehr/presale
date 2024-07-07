@@ -115,7 +115,7 @@ const Hero = () => {
 
       {/* Power By */}
       <div className="mt-10 xl:mt-0">
-        <div className="xl:container">
+        <div className="xl:container mx-auto">
           <div className="w-full h-auto xl:h-[380px] bg-black  xl:rounded-es-[150px] xl:rounded-ee-[150px] px-4 xl:px-[45px] pt-6 pb-6 xl:pb-[45px] xl:relative -top-12 z-10 overflow-hidden">
             <div className="border border-solid border-primary rounded-[30px] xl:rounded-ss-[0px] xl:rounded-se-[0px] xl:rounded-es-[110px] xl:rounded-ee-[110px] h-full pt-5 pb-5 xl:pb-0 px-6 xl:px-[70px]">
               <h4 className="text-white font-sequel100Wide95 text-[20px] xl:text-[40px] text-center uppercase pb-7 xl:pb-9 pt-0 xl:pt-7">
