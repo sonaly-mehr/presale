@@ -69,7 +69,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="relative xxl:static">
-                <div className="xl:basis-[42%] w-full absolute xl:static top-[-820px] lg:top-[-930px] mt-12 2xl:mt-0 flex justify-center">
+                <div className="xl:basis-[42%] w-full absolute xl:static top-[-850px] lg:top-[-930px] mt-[50px] 2xl:mt-0 flex justify-center">
                   <StageOne />
                 </div>
               </div>
@@ -125,28 +125,32 @@ const Hero = () => {
               <h4 className="text-white font-sequel100Wide95 text-[20px] xl:text-[40px] text-center uppercase pb-7 xl:pb-9 pt-0 xl:pt-7">
                 POWERED BY
               </h4>
-              <div className="bg-white rounded-[14px] xl:rounded-full w-full py-2 px-2 xl:px-8 flex justify-between xl:justify-evenly items-center flex-wrap xl:flex-nowrap gap-y-3 xl:gap-y-0">
+              <div className="bg-white rounded-[14px] xl:rounded-full w-full py-2 lg:py-3 px-2 xl:px-8">
+                <div className="w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center  gap-y-5 xl:gap-y-0 gap-x-5">
+              {/* flex justify-between xl:justify-evenly items-ctoenter flex-wrap xl:flex-nowrap */}
                 <img
                   src={partner1}
                   alt=""
-                  className="w-full xl:w-auto h-[45px] 2xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto"
+                  className="w-auto h-auto"
+                  // w-full xl:w-auto h-[45px] 2xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto
                 />
                 <img
                   src={partner2}
                   alt=""
-                  className="w-full xl:w-auto h-[30px] xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto"
+                  className="w-auot h-auto"
                 />
                 <img
                   src={partner3}
                   alt=""
-                  className="w-full xl:w-auto h-[30px] xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto"
+                  className="w-auto h-auto"
                 />
                 <img
                   src={partner4}
                   alt=""
-                  className="w-full xl:w-auto h-[40px] xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto"
+                  className="w-auto h-auto"
                 />
               </div>
+            </div>
             </div>
           </div>
         </div>
