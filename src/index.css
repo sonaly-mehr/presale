@@ -71,6 +71,9 @@
 body {
   background: #2B2B2B;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 :focus {
   outline: none;

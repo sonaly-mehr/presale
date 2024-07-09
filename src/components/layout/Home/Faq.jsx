@@ -8,7 +8,7 @@ import { FAQS } from "../../../constants";
 
 const Faq = () => {
   return (
-    <div className="container mx-auto pt-10 lg:pt-24 pb-14">
+    <div className="container mx-auto pt-10 lg:pt-24 pb-14" id="faq">
       <h2 className="heading mb-10 lg:mb-16 text-center">FAQS</h2>
       <ul className="flex flex-col gap-4">
         {FAQS.map((faq) => (

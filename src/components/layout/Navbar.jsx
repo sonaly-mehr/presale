@@ -169,7 +169,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/price"
                   className="text-white uppercase text-sm font-sequel100Wide45"
                 >
                   $PRIZE’S
@@ -177,7 +177,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/press"
                   className="text-white uppercase text-sm font-sequel100Wide45"
                 >
                   PRESS
@@ -195,6 +195,7 @@ const Navbar = () => {
                 <a
                   href="#faq"
                   className="text-white uppercase text-sm font-sequel100Wide45"
+                  onClick={handleNav}
                 >
                   FAQs
                 </a>

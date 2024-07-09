@@ -213,15 +213,15 @@ export const FAQS = [
 export const FOOTER_LINKS = [
   {
     menu: "WHITE PAPER",
-    link: "/",
+    link: "https://777btc.gitbook.io/777btc-whitepaper/",
   },
   {
     menu: "$PRIZES",
-    link: "/",
+    link: "/price",
   },
   {
     menu: "PRESS",
-    link: "/",
+    link: "/press",
   },
   {
     menu: "PLAY NOW",
