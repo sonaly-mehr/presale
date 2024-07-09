@@ -152,11 +152,11 @@ const Navbar = () => {
           <div
             className={
               showMenu
-                ? " md:hidden fixed top-[78px] left-0 right-0 w-full h-auto bg-[#2E2E2E] pt-6 ease-in duration-500"
-                : "md:hidden fixed top-[-100%] left-0 p-10 ease-in duration-500 w-full h-auto"
+                ? " md:hidden fixed top-[78px] left-0 right-0 w-full h-auto bg-[#2E2E2E] pt-5 ease-in duration-500"
+                : "md:hidden fixed top-[-150%] left-0 p-10 ease-in duration-500 w-full h-auto"
             }
           >
-            <ul className="flex flex-col gap-4 pl-6 pr-6">
+            <ul className="flex flex-col gap-2.5 pl-5 pr-5">
               <li className="flex justify-between items-center">
                 <a
                   href="https://777btc.gitbook.io/777btc-whitepaper/"
@@ -202,12 +202,12 @@ const Navbar = () => {
             </ul>
 
             <div
-              className={`bg-primary py-3 w-full mt-6 ${
+              className={`bg-primary py-2.5 w-full mt-5 ${
                 !showWallet && "rounded-es-[20px] rounded-ee-[20px"
               }] relative`}
             >
               <h4
-                className="text-[17px] uppercase font-sequel100Wide95 text-black text-center cursor-pointer"
+                className="text-[15px] uppercase font-sequel100Wide95 text-black text-center cursor-pointer"
                 onClick={() => setShowWallet(!showWallet)}
               >
                 {showWallet ? "MY WALLET" : "CONNECT WALLET"}
@@ -216,23 +216,23 @@ const Navbar = () => {
               <div
                 className={
                   showWallet
-                    ? " absolute top-[49px] left-0 right-0 w-full h-auto bg-[#2E2E2E]  ease-in duration-500"
+                    ? " absolute top-[37px] left-0 right-0 w-full h-auto bg-[#2E2E2E]  ease-in duration-500"
                     : "fixed top-[-100%] left-0 p-10 ease-in duration-500 w-full h-screen"
                 }
               >
-                <div className="rounded-ss-[33px] rounded-se-[33px] bg-[#3B3B3B] pt-3 m-5 mr-5">
+                <div className="rounded-ss-[33px] rounded-se-[33px] bg-[#3B3B3B] pt-3 m-4">
                   <img
                     src={tokenLogoMobile}
                     alt=""
-                    className="w-[150px] h-[150px] mx-auto"
+                    className="w-[100px] h-[100px] mx-auto"
                   />
                   <div className="w-full bg-white rounded-[10px] mt-3">
-                    <div className="bg-primary rounded-ss-[10px] rounded-se-[10px] rounded-es-[15px] rounded-ee-[15px] w-full py-4 text-center">
-                      <span className="font-montBlancSemiBold text-base text-black">
+                    <div className="bg-primary rounded-ss-[10px] rounded-se-[10px] rounded-es-[15px] rounded-ee-[15px] w-full py-2.5 text-center">
+                      <span className="font-montBlancSemiBold text-[15px] text-black">
                         0x7a1BcA9C3a1BB5aa9204…A47E
                       </span>
                     </div>
-                    <div className="px-7 py-5">
+                    <div className="px-6 py-3.5">
                       <span className="block text-left font-sequel100Wide65 text-[11px] text-black uppercase mb-2">
                         Balance
                       </span>
@@ -254,9 +254,9 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-secondary py-3 w-full mt-0 rounded-es-[20px] rounded-ee-[20px]">
+                <div className="bg-secondary py-2.5 w-full mt-0 rounded-es-[20px] rounded-ee-[20px]">
                   <h4
-                    className="text-[17px] uppercase font-sequel100Wide95 text-black text-center cursor-pointer"
+                    className="text-[15px] uppercase font-sequel100Wide95 text-black text-center cursor-pointer"
                     onClick={() => setShowWallet(!showWallet)}
                   >
                     DISCONNECT
@@ -265,7 +265,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            <div className="absolute bottom-[50px] right-0 w-[280px]">
+            <div className="absolute bottom-[43px] right-0 w-[260px]">
               <img
                 src={tokenLogo}
                 alt=""

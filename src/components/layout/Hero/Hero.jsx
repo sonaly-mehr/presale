@@ -69,7 +69,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="relative xxl:static">
-                <div className="xl:basis-[42%] w-full absolute xl:static top-[-820px] lg:top-[-930px] mt-16 2xl:mt-0 flex justify-center">
+                <div className="xl:basis-[42%] w-full absolute xl:static top-[-820px] lg:top-[-930px] mt-12 2xl:mt-0 flex justify-center">
                   <StageOne />
                 </div>
               </div>
@@ -125,7 +125,7 @@ const Hero = () => {
               <h4 className="text-white font-sequel100Wide95 text-[20px] xl:text-[40px] text-center uppercase pb-7 xl:pb-9 pt-0 xl:pt-7">
                 POWERED BY
               </h4>
-              <div className="bg-white rounded-[14px] xl:rounded-full w-full py-2 px-2 xl:px-8 flex justify-between xl:justify-evenly items-center flex-wrap xl:flex-nowrap gap-y-3  gap-x-2 xl:gap-y-0">
+              <div className="bg-white rounded-[14px] xl:rounded-full w-full py-2 px-2 xl:px-8 flex justify-between xl:justify-evenly items-center flex-wrap xl:flex-nowrap gap-y-3 xl:gap-y-0">
                 <img
                   src={partner1}
                   alt=""
