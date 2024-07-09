@@ -117,8 +117,11 @@ body{
 .crypto-bg{
   background-image: url('/src/assets/images/crypto-bg.jpg');
 }
+.menu-transition{
+  transition: all 0.5s ease-in-out;
+}
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .hero_shaddow{
     box-shadow: none;
   }

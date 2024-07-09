@@ -11,7 +11,7 @@ import lock from "../../../assets/images/lock.png";
 const PresalePrice = () => {
   return (
     <div className="container mx-auto">
-      <div className="bg-[#1B1B1B] rounded-[20px] py-8 lg:py-20 px-4 lg:px-24">
+      <div className="bg-[#1B1B1B] rounded-[20px] py-8 xl:py-20 px-4 xl:px-24">
         <h2 className="heading mb-10 lg:mb-12 text-center lg:text-left">
           PRESALE $PRIZE’S
         </h2>
@@ -133,13 +133,14 @@ const PresalePrice = () => {
         <div className="bg-[#BE0072] rounded-[20px] py-20 pl-4 lg:pl-24 relative overflow-hidden">
           <div className="flex flex-col-reverse lg:flex-row items-center">
             <div className="lg:flex-1">
-              <h2 className="heading text-center lg:text-left relative top-[-330px] md:top-0 ">
+              <h2 className="heading text-left absolute lg:static top-[80px] left-1/2 -translate-x-1/2 lg:translate-x-0">
+                {/* top-[-330px] xl:top-0 */}
                 TOKENOMICS
               </h2>
               <h4 className="hidden lg:block text-[35px] font-sequel100Wide75 text-white uppercase mt-[-12px]">
                 10 MILLION $PRIZE TOKENS
               </h4>
-              <ul className="flex flex-col gap-6 mt-12 justify-center">
+              <ul className="flex flex-col gap-6 mt-20 lg:mt-12 justify-center">
                 {TOKENOMICS?.map((token) => (
                   <li className="flex gap-6 lg:gap-10 items-center relative">
                     <span
@@ -187,25 +188,31 @@ const PresalePrice = () => {
               <img
                 src={pieChart}
                 alt=""
-                className="w-full h-auto relative right-auto lg:right-[50px] top-[80px] lg:top-[20px]"
+                className="w-full h-auto relative right-auto lg:right-[50px] top-[80px] lg:top-[-130px] xl:top-[-80px] 2xl:top-[20px]"
               />
             </div>
           </div>
 
-          <div className="absolute top-[65px] md:top-[85px] right-[-20px] md:right-[-40px] bottom-0 mix-blend-luminosity overflow-hidden rounded-[20px]">
+          <div className="hidden lg:block absolute top-[65px] md:top-[85px] right-[-20px] md:right-[-40px] bottom-0 mix-blend-luminosity overflow-hidden rounded-[20px]">
             <img
               src={chartBg}
               alt=""
-              className="w-auto h-auto rounded-[20px] hidden md:block"
+              className="w-auto h-auto rounded-[20px]"
             />
-            <img src={chartBgMobile} alt="" className="w-auto h-auto" />
+          </div>
+          <div className="block lg:hidden absolute top-[65px] md:top-[85px] right-0 left-3 bottom-0 w-full h-full mix-blend-luminosity overflow-hidden rounded-[20px]">
+            <img
+              src={chartBgMobile}
+              alt=""
+              className="w-full h-auto block lg:hidden mx-auto"
+            />
           </div>
         </div>
       </div>
 
       {/* PRICING */}
       <div className="relative top-[-70px] z-[-2]">
-        <div className="bg-dark rounded-[20px] pt-14 lg:pt-20 pb-8 px-4 lg:px-16 grid grid-cols-2 lg:grid-cols-3 gap-y-3 lg:gap-y-7 gap-x-4 lg:gap-x-8">
+        <div className="bg-dark rounded-[20px] pt-20 lg:pt-20 pb-8 px-4 lg:px-16 grid grid-cols-2 lg:grid-cols-3 gap-y-3 lg:gap-y-7 gap-x-4 lg:gap-x-8">
           {PRICING?.map((pricing, index) => (
             <div key={index}>
               <h5 className="text-white font-sequel100Wide75 text-[8.16px] lg:text-xl text-center py-1.5 lg:py-3.5 rounded-full border border-solid border-primary">

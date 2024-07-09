@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="relative md:static">
         <div className="container mx-auto">
           <div className="hero_shaddow">
-            <div className="xl:bg-dark rounded-[20px] xl:pl-20 xl:pr-12 xl:py-16 flex flex-col xl:flex-row gap-8 justify-between mt-10 relative z-30 overflow-hidden text-center xl:text-left">
+            <div className="xl:bg-dark rounded-[20px] xl:pl-20 xl:pr-12 xl:py-16 flex flex-col xl:flex-row gap-8 justify-between mt-32 lg:mt-10 relative z-30 overflow-hidden text-center xl:text-left">
               <div className="xl:basis-[58%]">
                 <div className="bg-secondary rounded-[30px] px-5 py-2 w-[240px] xl:w-fit mx-auto xl:mx-0">
                   <h6 className="font-sequel100Wide95 text-[12.91px] xl:text-[15.5px] text-white uppercase ">
@@ -32,8 +32,12 @@ const Hero = () => {
                 <h2 className="text-white text-[27.49px] xl:text-[45px] leading-[29.6px] xl:leading-[48px] my-5 uppercase font-sequel100Wide95">
                   THE WORLDS FIRST CRYPTO GIVEAWAY PLATFORM.
                 </h2>
-                <div className="mt-[500px] xl:mt-12 xl:w-[370px]">
-                  <a href="https://777btc.gitbook.io/777btc-whitepaper/" target="_blank" className="block font-sequel100Wide65 text-[14.68px] uppercase text-white border border-solid border-white py-3 w-full text-center rounded-3xl">
+                <div className="mt-[500px] lg:mt-[610px] xl:mt-0 xl:w-[370px]">
+                  <a
+                    href="https://777btc.gitbook.io/777btc-whitepaper/"
+                    target="_blank"
+                    className="block font-sequel100Wide65 text-[14.68px] uppercase text-white border border-solid border-white py-3 w-full text-center rounded-3xl"
+                  >
                     WHITEPAPER
                   </a>
                   <div className="flex gap-3 justify-between w-full my-3">
@@ -64,8 +68,8 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative xl:static">
-                <div className="xl:basis-[42%] w-full absolute xl:static top-[-820px] mt-16 xl:mt-0 flex justify-center">
+              <div className="relative xxl:static">
+                <div className="xl:basis-[42%] w-full absolute xl:static top-[-820px] lg:top-[-930px] mt-16 2xl:mt-0 flex justify-center">
                   <StageOne />
                 </div>
               </div>
@@ -108,7 +112,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="block lg:hidden absolute top-[-140px] w-screen right-0 left-0 h-auto mix-blend-overlay">
+        <div className="block md:hidden absolute top-[-140px] w-screen right-0 left-0 h-auto mix-blend-overlay z-[-1]">
           <img src={tokenLogo} alt="" className="w-full" />
         </div>
       </div>
@@ -125,22 +129,22 @@ const Hero = () => {
                 <img
                   src={partner1}
                   alt=""
-                  className="w-full xl:w-auto h-[45px] xl:h-auto basis-[48%] sm:basis-[32%] xl:basis-auto"
+                  className="w-full xl:w-auto h-[45px] 2xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto"
                 />
                 <img
                   src={partner2}
                   alt=""
-                  className="w-full xl:w-auto h-[30px] xl:h-auto basis-[48%] sm:basis-[32%] xl:basis-auto"
+                  className="w-full xl:w-auto h-[30px] xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto"
                 />
                 <img
                   src={partner3}
                   alt=""
-                  className="w-full xl:w-auto h-[30px] xl:h-auto basis-[48%] sm:basis-[32%] xl:basis-auto"
+                  className="w-full xl:w-auto h-[30px] xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto"
                 />
                 <img
                   src={partner4}
                   alt=""
-                  className="w-full xl:w-auto h-[40px] xl:h-auto basis-[48%] sm:basis-[32%] xl:basis-auto"
+                  className="w-full xl:w-auto h-[40px] xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto"
                 />
               </div>
             </div>

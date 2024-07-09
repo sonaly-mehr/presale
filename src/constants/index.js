@@ -6,7 +6,7 @@ import { IoLogoYoutube } from "react-icons/io";
 export const MENU = [
   {
     menu: "WHITEPAPER",
-    link: "/",
+    link: "https://777btc.gitbook.io/777btc-whitepaper/",
     class: "active_menu",
   },
   {
