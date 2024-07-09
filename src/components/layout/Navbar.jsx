@@ -49,7 +49,7 @@ const Navbar = () => {
           </div>
 
           {/* HAMBURGER MENU */}
-          <div>
+          <div className="">
             {showMenu ? (
               <RxCross2
                 className="block lg:hidden text-primary text-3xl cursor-pointer"

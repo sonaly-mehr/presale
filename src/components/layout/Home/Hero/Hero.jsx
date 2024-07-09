@@ -1,15 +1,15 @@
 import React from "react";
-import spIcon from "../../../assets/images/sp-icon.svg";
+import spIcon from "../../../../assets/images/sp-icon.svg";
 import { PiCopy } from "react-icons/pi";
-import paul from "../../../assets/images/paul.svg";
-import partner1 from "../../../assets/images/partner1.svg";
-import partner2 from "../../../assets/images/partner2.svg";
-import partner3 from "../../../assets/images/partner3.svg";
-import partner4 from "../../../assets/images/partner4.svg";
-import token1 from "../../../assets/images/token1.png";
-import token2 from "../../../assets/images/token2.png";
-import token3 from "../../../assets/images/token3.png";
-import tokenLogo from "../../../assets/images/777_TokenLogo3_mobile.png";
+import paul from "../../../../assets/images/paul.svg";
+import partner1 from "../../../../assets/images/partner1.svg";
+import partner2 from "../../../../assets/images/partner2.svg";
+import partner3 from "../../../../assets/images/partner3.svg";
+import partner4 from "../../../../assets/images/partner4.svg";
+import token1 from "../../../../assets/images/token1.png";
+import token2 from "../../../../assets/images/token2.png";
+import token3 from "../../../../assets/images/token3.png";
+import tokenLogo from "../../../../assets/images/777_TokenLogo3_mobile.png";
 
 import StageOne from "./Components/StageOne";
 const Hero = () => {
@@ -69,7 +69,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="relative xxl:static">
-                <div className="xl:basis-[42%] w-full absolute xl:static top-[-850px] lg:top-[-930px] mt-[50px] 2xl:mt-0 flex justify-center">
+                <div className="xl:basis-[42%] w-full absolute xl:static top-[-820px] lg:top-[-930px] mt-[50px] 2xl:mt-0 flex justify-center">
                   <StageOne />
                 </div>
               </div>
@@ -127,30 +127,18 @@ const Hero = () => {
               </h4>
               <div className="bg-white rounded-[14px] xl:rounded-full w-full py-2 lg:py-3 px-2 xl:px-8">
                 <div className="w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-items-center  gap-y-5 xl:gap-y-0 gap-x-5">
-              {/* flex justify-between xl:justify-evenly items-ctoenter flex-wrap xl:flex-nowrap */}
-                <img
-                  src={partner1}
-                  alt=""
-                  className="w-auto h-auto"
-                  // w-full xl:w-auto h-[45px] 2xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto
-                />
-                <img
-                  src={partner2}
-                  alt=""
-                  className="w-auot h-auto"
-                />
-                <img
-                  src={partner3}
-                  alt=""
-                  className="w-auto h-auto"
-                />
-                <img
-                  src={partner4}
-                  alt=""
-                  className="w-auto h-auto"
-                />
+                  {/* flex justify-between xl:justify-evenly items-ctoenter flex-wrap xl:flex-nowrap */}
+                  <img
+                    src={partner1}
+                    alt=""
+                    className="w-auto h-auto"
+                    // w-full xl:w-auto h-[45px] 2xl:h-auto basis-[47.5%] md:basis-[32%] xl:basis-auto
+                  />
+                  <img src={partner2} alt="" className="w-auot h-auto" />
+                  <img src={partner3} alt="" className="w-auto h-auto" />
+                  <img src={partner4} alt="" className="w-auto h-auto" />
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>

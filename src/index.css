@@ -2,139 +2,146 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
+@font-face {
   font-family: "sequel100Wide45";
   src: local("Sequel100Wide-45"),
-  url('/src/assets/fonts/Sequel100Wide-45.ttf') format("truetype");
+    url('/src/assets/fonts/Sequel100Wide-45.ttf') format("truetype");
 }
-@font-face{
-  font-family: "sequel100Wide46";
-  src: local("Sequel100Wide-46"),
-  url('/src/assets/fonts/Sequel100Wide-46.ttf') format("truetype");
-}
-@font-face{
+
+@font-face {
   font-family: "sequel100Wide55";
   src: local("Sequel100Wide-55"),
-  url('/src/assets/fonts/Sequel100Wide-55.ttf') format("truetype");
+    url('/src/assets/fonts/Sequel100Wide-55.ttf') format("truetype");
 }
-@font-face{
-  font-family: "sequel100Wide56";
-  src: local("Sequel100Wide-56"),
-  url('/src/assets/fonts/Sequel100Wide-56.ttf') format("truetype");
-}
-@font-face{
+
+@font-face {
   font-family: "sequel100Wide65";
   src: local("Sequel100Wide-65"),
-  url('/src/assets/fonts/Sequel100Wide-65.ttf') format("truetype");
+    url('/src/assets/fonts/Sequel100Wide-65.ttf') format("truetype");
 }
-@font-face{
-  font-family: "sequel100Wide66";
-  src: local("Sequel100Wide-66"),
-  url('/src/assets/fonts/Sequel100Wide-66.ttf') format("truetype");
-}
-@font-face{
+
+@font-face {
   font-family: "sequel100Wide75";
   src: local("Sequel100Wide-75"),
-  url('/src/assets/fonts/Sequel100Wide-75.ttf') format("truetype");
+    url('/src/assets/fonts/Sequel100Wide-75.ttf') format("truetype");
 }
-@font-face{
-  font-family: "sequel100Wide76";
-  src: local("Sequel100Wide-76"),
-  url('/src/assets/fonts/Sequel100Wide-76.ttf') format("truetype");
-}
-@font-face{
+
+@font-face {
   font-family: "sequel100Wide85";
   src: local("Sequel100Wide-85"),
-  url('/src/assets/fonts/Sequel100Wide-85.ttf') format("truetype");
+    url('/src/assets/fonts/Sequel100Wide-85.ttf') format("truetype");
 }
-@font-face{
-  font-family: "sequel100Wide86";
-  src: local("Sequel100Wide-86"),
-  url('/src/assets/fonts/Sequel100Wide-86.ttf') format("truetype");
-}
-@font-face{
+
+@font-face {
   font-family: "sequel100Wide95";
   src: local("Sequel100Wide-95"),
-  url('/src/assets/fonts/Sequel100Wide-95.ttf') format("truetype");
+    url('/src/assets/fonts/Sequel100Wide-95.ttf') format("truetype");
 }
-@font-face{
-  font-family: "sequel100Wide96";
-  src: local("Sequel100Wide-96"),
-  url('/src/assets/fonts/Sequel100Wide-96.ttf') format("truetype");
-}
-@font-face{
+
+@font-face {
   font-family: "montBlancLight";
   src: local("MontBlanc-Light"),
-  url('/src/assets/fonts/MontBlanc-Light.otf') format("opentype");
+    url('/src/assets/fonts/MontBlanc-Light.otf') format("opentype");
 }
-@font-face{
+
+@font-face {
   font-family: "montBlancRegular";
   src: local("MontBlanc-Regular"),
-  url('/src/assets/fonts/MontBlanc-Regular.otf') format("opentype");
+    url('/src/assets/fonts/MontBlanc-Regular.otf') format("opentype");
 }
-@font-face{
+
+@font-face {
   font-family: "montBlancSemiBold";
   src: local("MontBlanc-SemiBold"),
-  url('/src/assets/fonts/MontBlanc-SemiBold.otf') format("opentype");
+    url('/src/assets/fonts/MontBlanc-SemiBold.otf') format("opentype");
 }
-@font-face{
+
+@font-face {
   font-family: "montBlancBold";
   src: local("MontBlanc-Bold"),
-  url('/src/assets/fonts/MontBlanc-Bold.otf') format("opentype");
+    url('/src/assets/fonts/MontBlanc-Bold.otf') format("opentype");
 }
-@font-face{
+
+@font-face {
   font-family: "montBlancBlack";
   src: local("MontBlanc-Black"),
-  url('/src/assets/fonts/MontBlanc-Black.otf') format("opentype");
+    url('/src/assets/fonts/MontBlanc-Black.otf') format("opentype");
 }
-body{
+
+body {
   background: #2B2B2B;
 }
-:focus{
+
+:focus {
   outline: none;
 }
-.heading{
-  @apply font-sequel100Wide95 text-[30px] lg:text-[50px] leading-[35.4px] lg:leading-normal text-white
+
+.heading {
+  @apply font-sequel100Wide95 text-[30px] lg:text-[50px] leading-[35.4px] lg:leading-normal text-white uppercase
 }
-.hero_shaddow{
+
+.hero_shaddow {
   box-shadow: 0px 150px 35px 0px rgba(0, 0, 0, 0.45);
 }
 
 .rotate-text {
   animation: rotateText 25s linear infinite;
 }
+
 @keyframes rotateText {
   0% {
     transform: rotate(360deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
-.faq-transition{
+
+.faq-transition {
   transition: max-height 0.5s ease;
 }
-.crypto-bg{
+
+.crypto-bg {
   background-image: url('/src/assets/images/crypto-bg.jpg');
 }
-.menu-transition{
+
+.menu-transition {
   transition: all 0.5s ease-in-out;
 }
 
+.press-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 250px;
+}
+
 @media screen and (max-width: 1400px) {
-  .hero_shaddow{
+  .hero_shaddow {
     box-shadow: none;
   }
 }
 
+@media screen and (max-width: 992px) {
+  .press-content::before {
+    height: 120px;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .crypto-bg{
+  .crypto-bg {
     background-image: url('/src/assets/images/crypto-bg-mobile.png');
   }
-  
-}
-@media screen and (min-width: 600px) {
-  /* .tokenPosition{
-    top: -100px !important
-  } */
+
+  .price-section .crypto-bg {
+    background-image: none;
+  }
+
+  .press-content::before {
+    height: 100px;
+  }
 }

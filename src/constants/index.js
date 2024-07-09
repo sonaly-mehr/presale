@@ -11,11 +11,11 @@ export const MENU = [
   },
   {
     menu: "$PRIZE’S",
-    link: "/",
+    link: "/price",
   },
   {
     menu: "PRESS",
-    link: "/",
+    link: "/press",
   },
   {
     menu: "PLAY NOW",
@@ -248,4 +248,17 @@ export const SOCIAL_LINKS = [
     icon: <IoLogoYoutube />,
     link: "/",
   },
+];
+
+export const WHY_ENTER = [
+  "Massive Reward: 1 BTC could significantly boost your crypto portfolio or be your ticket to a dream investment.",
+  "Fair Play: Every ticket purchased with 777BTC tokens enters you into a transparent, provably fair draw.",
+  "Thrilling Experience: Feel the adrenaline rush as you watch the live giveaway draw and edge closer to winning big.",
+  "Live draws hosted on our official TG group or X space, the lucky wallet address will be chosen live using random.org number generator. A recording of the live draw will then be posted across our social media platforms for replays or late attendees.",
+];
+
+export const PARTICIPATE = [
+  "Get 777BTC Tokens: Acquire your tokens through our presale platform, just connect your wallet and follow the steps",
+  "Enter the giveaway: You will be entered automatically after you have purchased your $PRIZE tokens.",
+  "Watch the Draw: Tune in live on our X Space to watch the draw to see if you’re the lucky winner of 1 BTC!",
 ];

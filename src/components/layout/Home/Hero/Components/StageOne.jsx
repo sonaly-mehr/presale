@@ -1,5 +1,5 @@
 import React from "react";
-import progress from "../../../../assets/images/progress.png";
+import progress from "../../../../../assets/images/progress.png";
 
 const StageOne = () => {
   return (
