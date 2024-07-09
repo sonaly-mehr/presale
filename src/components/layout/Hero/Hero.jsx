@@ -126,7 +126,7 @@ const Hero = () => {
                 POWERED BY
               </h4>
               <div className="bg-white rounded-[14px] xl:rounded-full w-full py-2 lg:py-3 px-2 xl:px-8">
-                <div className="w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center  gap-y-5 xl:gap-y-0 gap-x-5">
+                <div className="w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-items-center  gap-y-5 xl:gap-y-0 gap-x-5">
               {/* flex justify-between xl:justify-evenly items-ctoenter flex-wrap xl:flex-nowrap */}
                 <img
                   src={partner1}
