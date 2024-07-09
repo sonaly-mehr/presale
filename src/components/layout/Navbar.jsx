@@ -144,7 +144,7 @@ const Navbar = () => {
         <div
           className={
             showMenu
-              ? "md:hidden fixed left-0 top-[80px] w-full h-screen bg-black/70"
+              ? "md:hidden fixed left-0 top-[78px] w-full h-screen bg-black/70"
               : ""
           }
         >
@@ -152,7 +152,7 @@ const Navbar = () => {
           <div
             className={
               showMenu
-                ? " md:hidden fixed top-[80px] left-0 right-0 w-full h-auto bg-[#2E2E2E] pt-6 ease-in duration-500"
+                ? " md:hidden fixed top-[78px] left-0 right-0 w-full h-auto bg-[#2E2E2E] pt-6 ease-in duration-500"
                 : "md:hidden fixed top-[-100%] left-0 p-10 ease-in duration-500 w-full h-auto"
             }
           >
