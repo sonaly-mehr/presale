@@ -32,7 +32,7 @@ const Hero = () => {
                 <h2 className="text-white text-[27.49px] xl:text-[45px] leading-[29.6px] xl:leading-[48px] my-5 uppercase font-sequel100Wide95">
                   THE WORLDS FIRST CRYPTO GIVEAWAY PLATFORM.
                 </h2>
-                <div className="mt-[500px] lg:mt-[610px] xl:mt-0 xl:w-[370px]">
+                <div className="mt-[520px] lg:mt-[610px] xl:mt-0 xl:w-[370px]">
                   <a
                     href="https://777btc.gitbook.io/777btc-whitepaper/"
                     target="_blank"
@@ -69,7 +69,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="relative xxl:static">
-                <div className="xl:basis-[42%] w-full absolute xl:static top-[-820px] lg:top-[-930px] mt-[50px] 2xl:mt-0 flex justify-center">
+                <div className="xl:basis-[42%] w-full absolute xl:static top-[-840px] lg:top-[-930px] mt-[50px] 2xl:mt-0 flex justify-center">
                   <StageOne />
                 </div>
               </div>
