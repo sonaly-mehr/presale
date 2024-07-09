@@ -153,7 +153,7 @@ const Navbar = () => {
             className={
               showMenu
                 ? " md:hidden fixed top-[80px] left-0 right-0 w-full h-auto bg-[#2E2E2E] pt-6 ease-in duration-500"
-                : "md:hidden fixed top-[-100%] left-0 p-10 ease-in duration-500 w-full h-screen"
+                : "md:hidden fixed top-[-100%] left-0 p-10 ease-in duration-500 w-full h-auto"
             }
           >
             <ul className="flex flex-col gap-4 pl-6 pr-6">
@@ -265,7 +265,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            <div className="absolute bottom-[57px] right-0 w-[280px]">
+            <div className="absolute bottom-[50px] right-0 w-[280px]">
               <img
                 src={tokenLogo}
                 alt=""
