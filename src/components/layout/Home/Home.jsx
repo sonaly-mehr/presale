@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Navbar";
 import Hero from "./Hero/Hero";
 import FeaturedIn from "./FeaturedIn";
 import About from "./About";
@@ -8,7 +7,8 @@ import PresalePrice from "./PresalePrice";
 import HowToBuy from "./HowToBuy";
 import Roadmap from "./Roadmap";
 import Faq from "./Faq";
-import Footer from "../Footer";
+import Navbar from "../../ui/Navbar";
+import Footer from "../../ui/Footer";
 
 const Home = () => {
   return (

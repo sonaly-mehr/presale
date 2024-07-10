@@ -122,6 +122,9 @@ html{
   background: rgba(0, 0, 0, 0.5);
   height: 250px;
 }
+.mobile-nav:hover .hover-icon{
+  opacity: 1;
+}
 
 @media screen and (max-width: 1400px) {
   .hero_shaddow {

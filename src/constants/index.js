@@ -19,7 +19,7 @@ export const MENU = [
   },
   {
     menu: "PLAY NOW",
-    link: "/",
+    link: "/play-now",
   },
 ];
 
@@ -225,7 +225,7 @@ export const FOOTER_LINKS = [
   },
   {
     menu: "PLAY NOW",
-    link: "/",
+    link: "/play-now",
   },
 ];
 

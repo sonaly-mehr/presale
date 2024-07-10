@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import press1 from "../../../assets/images/press1.jpg";
 import press2 from "../../../assets/images/press2.jpg";
 import press3 from "../../../assets/images/press3.jpg";
@@ -10,6 +8,8 @@ import logo3 from "../../../assets/images/logo3.png";
 import mobilePress1 from "../../../assets/images/press_mobile1.png";
 import mobilePress2 from "../../../assets/images/press_mobile2.png";
 import mobilePress3 from "../../../assets/images/press_mobile3.png";
+import Navbar from "../../ui/Navbar";
+import Footer from "../../ui/Footer";
 
 const Press = () => {
   return (

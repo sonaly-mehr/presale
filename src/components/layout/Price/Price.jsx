@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import { WHY_ENTER } from "../../../constants";
 import listDisc from "../../../assets/images/listDisc.svg";
 import cryptoBg from "../../../assets/images/price-crypto.jpg";
@@ -10,6 +8,8 @@ import paul from "../../../assets/images/paul.svg";
 import HowToParticipate from "./HowToParticipate";
 import DailyGiveAways from "./DailyGiveAways";
 import coin4 from "../../../assets/images/coin4.png";
+import Navbar from "../../ui/Navbar";
+import Footer from "../../ui/Footer";
 
 const Price = () => {
   return (
