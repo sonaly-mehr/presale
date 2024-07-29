@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="relative md:static">
         <div className="container mx-auto">
           <div className="">
-            <div className="xl:bg-dark hero_shaddow rounded-[20px] xl:pl-20 xl:pr-12 xl:py-16 flex flex-col xl:flex-row gap-8 justify-between mt-32 lg:mt-10 relative z-30 overflow-hidden text-center xl:text-left">
+            <div className="xl:bg-dark hero_shaddow rounded-[20px] xl:pl-20 xl:pr-12 xl:py-16 flex flex-col xl:flex-row gap-8 justify-between mt-10 relative z-30 overflow-hidden text-center xl:text-left">
               <div className="xl:basis-[58%]">
                 <div className="bg-secondary rounded-[30px] px-5 py-2 w-[240px] xl:w-fit mx-auto xl:mx-0">
                   <h6 className="font-sequel100Wide95 text-[12.91px] xl:text-[15.5px] text-white uppercase ">

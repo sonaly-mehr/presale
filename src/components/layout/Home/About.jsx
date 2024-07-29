@@ -1,5 +1,4 @@
 import React from "react";
-import cryptoBg from "../../../assets/images/crypto-bg.jpg";
 import { ABOUT_LISTS } from "../../../constants";
 import listDisc from "../../../assets/images/listDisc.svg";
 import Button from "../../ui/Button";
