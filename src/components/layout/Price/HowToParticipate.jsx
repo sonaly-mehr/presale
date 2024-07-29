@@ -58,7 +58,7 @@ const HowToParticipate = () => {
             to a public wallet for all to see.
           </p>
           <div className="my-10 lg:my-16">
-            <Button text="BUY NOW" bgColor="bg-primary" />
+            <Button text="BUY NOW" bgColor="bg-primary" link="/price"/>
           </div>
         </div>
 

@@ -15,8 +15,8 @@ const PresalePrice = () => {
         <h2 className="heading mb-10 lg:mb-12 text-center lg:text-left">
           PRESALE $PRIZE’S
         </h2>
-        <div className="flex flex-col lg:flex-row bg-darkGray rounded-[10px] items-center lg:h-[240px] mb-5">
-          <div className="lg:flex-1 px-6 lg:px-[43px] py-8 lg:py-0">
+        <div className="flex flex-col lg:flex-row bg-darkGray rounded-[10px] items-center h-auto lg:h-[240px] mb-5 ">
+          <div className="flex-1 px-6 lg:px-[43px] py-8 lg:py-0">
             <h5 className="text-[22.17px] lg:text-[40px] leading-[16.62px] lg:leading-[30px] font-sequel100Wide75 text-primary uppercase mb-5 lg:mb-6 text-center lg:text-left">
               WIN A BITCOIN
             </h5>
@@ -26,21 +26,20 @@ const PresalePrice = () => {
               The best odds on the market of winning 1 BTC!
             </p>
           </div>
-          <div className="lg:flex-1 h-full">
+          <div class="lg:flex-1 h-full">
             <img
               src={coin1}
               alt=""
-              className="w-full h-full rounded-[5px] lg:rounded-[10px]"
+              className="object-cover w-full h-full rounded-[5px] lg:rounded-[10px]"
             />
           </div>
-          {/* p-[45px] */}
         </div>
         <div className="flex flex-col-reverse lg:flex-row bg-darkGray rounded-[10px] items-center lg:h-[240px]">
           <div className="flex-1 h-full">
             <img
               src={coin2}
               alt=""
-              className="w-full h-full rounded-[5px] lg:rounded-[10px]"
+              className="object-cover w-full h-full rounded-[5px] lg:rounded-[10px]"
             />
           </div>
           <div className="lg:flex-1 px-6 lg:px-[43px] py-8 lg:py-0">
@@ -56,7 +55,7 @@ const PresalePrice = () => {
           {/* p-[45px] */}
         </div>
         <div className="my-4 lg:my-6">
-          <Button text="BUY NOW" bgColor="bg-white" />
+          <Button text="BUY NOW" bgColor="bg-white" link="/price" />
         </div>
 
         {/* COUNTDOW */}
@@ -124,7 +123,11 @@ const PresalePrice = () => {
 
         {/* More INFO */}
         <div className="mt-6">
-          <Button text="MORE INFO" bgColor="bg-primary" />
+          <Button
+            text="MORE INFO"
+            bgColor="bg-primary"
+            link="https://777btc.gitbook.io/777btc-whitepaper/"
+          />
         </div>
       </div>
 

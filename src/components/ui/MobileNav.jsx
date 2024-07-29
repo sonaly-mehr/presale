@@ -21,11 +21,11 @@ const MobileNav = ({ showMenu, handleNav, showWallet, setShowWallet }) => {
           <div
             className={
               showMenu
-                ? " md:hidden fixed top-[78px] left-0 right-0 w-full h-auto bg-[#2E2E2E] pt-5 ease-in duration-500"
-                : "md:hidden fixed top-[-150%] left-0 p-10 ease-in duration-500 w-full h-auto"
+                ? " md:hidden absolute top-0 left-0 right-0 w-full h-auto bg-[#2E2E2E] pt-5 ease-in duration-500"
+                : "md:hidden absolute top-[-800px] p-10 left-0 right-0 ease-in duration-500 w-full h-auto"
             }
           >
-            <ul className="flex flex-col gap-2.5 pl-5 pr-5">
+            <ul className="flex flex-col gap-4 pl-5 pr-5 py-4">
               <li className="mobile-nav" onClick={handleNav}>
                 <NavLink
                   to="https://777btc.gitbook.io/777btc-whitepaper/"
@@ -131,7 +131,7 @@ const MobileNav = ({ showMenu, handleNav, showWallet, setShowWallet }) => {
             </ul>
 
             <div
-              className={`bg-primary py-2.5 w-full mt-5 ${
+              className={`bg-primary py-5 w-full mt-5 ${
                 !showWallet && "rounded-es-[20px] rounded-ee-[20px"
               }] relative`}
             >
@@ -145,7 +145,7 @@ const MobileNav = ({ showMenu, handleNav, showWallet, setShowWallet }) => {
               <div
                 className={
                   showWallet
-                    ? " absolute top-[37px] left-0 right-0 w-full h-auto bg-[#2E2E2E]  ease-in duration-500"
+                    ? " absolute top-[63px] left-0 right-0 w-full h-auto bg-[#2E2E2E]  ease-in duration-500"
                     : "fixed top-[-100%] left-0 p-10 ease-in duration-500 w-full h-screen"
                 }
               >

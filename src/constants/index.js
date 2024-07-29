@@ -196,11 +196,6 @@ export const FAQS = [
       "Yes, 777BTC operates outside of gambling regulations, providing total immunity from gambling commissions. We adhere to strict legal standards to ensure compliance and protect our community.",
   },
   {
-    heading: "How does 777BTC ensure security and transparency?",
-    answer:
-      "Yes, you can participate in multiple giveaways on the 777BTC platform simultaneously. This increases your chances of winning across different prize pools and maximizes your potential rewards.",
-  },
-  {
     heading:
       "Where can I find more information about 777BTC and its giveaways?",
     answer:

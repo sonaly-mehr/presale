@@ -68,17 +68,17 @@ const StageOne = () => {
         </div>
       </div>
       <div>
-        <button className="text-primary bg-black font-sequel100Wide95 text-[16.53px] lg:text-[22.35px] uppercase w-full py-1.5 lg:py-2 rounded-[8px] lg:rounded-xl">
+        <a href="/price" className="text-primary block bg-black font-sequel100Wide95 text-[16.53px] lg:text-[22.35px] uppercase w-full py-1.5 lg:py-2 rounded-[8px] lg:rounded-xl">
           BUY NOW
-        </button>
+        </a>
       </div>
       <a
         href="#"
-        className="text-[15px] font-sequel100Wide95 text-black mt-4 underline hidden lg:inline-block"
+        className="text-xs lg:text-[15px] font-sequel100Wide95 text-black mt-4 underline block"
       >
         Win $PRIZE’S with our TG Game
       </a>
-      <a href="#" className="block lg:hidden text-[11.02px] font-sequel100Wide95 text-black mt-4 underline">Earn more $PRIZES</a>
+  
     </div>
   );
 };

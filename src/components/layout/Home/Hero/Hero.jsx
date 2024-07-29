@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import spIcon from "../../../../assets/images/sp-icon.svg";
 import { PiCopy } from "react-icons/pi";
 import paul from "../../../../assets/images/paul.svg";
@@ -13,12 +13,25 @@ import tokenLogo from "../../../../assets/images/777_TokenLogo3_mobile.png";
 
 import StageOne from "./Components/StageOne";
 const Hero = () => {
+  const [message, setMessage] = useState("");
+  const copyToClipboard = (text)=> {
+    const result = navigator.clipboard.writeText(text);
+    result.then(()=> {
+      setMessage(`Copied!`);
+    }).catch(()=> {
+      setMessage(`Error Coping!`)
+    }).finally(()=> {
+      setTimeout(() => {
+        setMessage("")
+      }, 1000);
+    })
+  }
   return (
     <>
       <div className="relative md:static">
         <div className="container mx-auto">
-          <div className="hero_shaddow">
-            <div className="xl:bg-dark rounded-[20px] xl:pl-20 xl:pr-12 xl:py-16 flex flex-col xl:flex-row gap-8 justify-between mt-32 lg:mt-10 relative z-30 overflow-hidden text-center xl:text-left">
+          <div className="">
+            <div className="xl:bg-dark hero_shaddow rounded-[20px] xl:pl-20 xl:pr-12 xl:py-16 flex flex-col xl:flex-row gap-8 justify-between mt-32 lg:mt-10 relative z-30 overflow-hidden text-center xl:text-left">
               <div className="xl:basis-[58%]">
                 <div className="bg-secondary rounded-[30px] px-5 py-2 w-[240px] xl:w-fit mx-auto xl:mx-0">
                   <h6 className="font-sequel100Wide95 text-[12.91px] xl:text-[15.5px] text-white uppercase ">
@@ -40,15 +53,13 @@ const Hero = () => {
                   >
                     WHITEPAPER
                   </a>
-                  <div className="flex gap-3 justify-between w-full my-3">
-                    <button className="flex-1 bg-primary rounded-3xl py-3 flex gap-4 items-center font-montBlancBold text-black text-[13px] justify-center">
-                      <img src={spIcon} alt="" className="w-auto h-auto" /> KYC{" "}
-                    </button>
-                    <button className="flex-1 bg-primary rounded-3xl py-3 flex gap-4 items-center font-montBlancBold text-black text-[13px] justify-center">
+                  <div className="w-full my-3">
+                    <button className="w-full bg-primary rounded-3xl py-3 flex gap-4 items-center font-montBlancBold text-black text-[13px] justify-center">
                       <img src={spIcon} alt="" className="w-auto h-auto" />{" "}
                       AUDIT{" "}
                     </button>
                   </div>
+                  <div className="w-full relative">
                   <button className="w-full bg-white py-4 flex gap-2 items-center font-sequel100Wide95 text-[8.06px] xl:text-[10px] justify-center rounded-3xl">
                     <span className="flex gap-2 xl:gap-1">
                       CONTRACT:{" "}
@@ -56,8 +67,16 @@ const Hero = () => {
                         2940UV02938SD...LKNS2SLKDNV
                       </span>
                     </span>{" "}
-                    <PiCopy className="text-secondary text-base" />
+                    <PiCopy className="text-secondary text-base" onClick={()=> copyToClipboard("2940UV02938SD...LKNS2SLKDNV")}/>
+                  
                   </button>
+                  {
+                    message && 
+                  <p className="absolute top-[-65px] right-[-40px] text-secondary bg-white text-sm text-center rounded-2xl py-3 px-4 shadow-xl w-fit">{message}</p>
+                }
+                  </div>
+                  
+                  
                   <div className="text-secondary mt-4">
                     <span className="font-sequel100Wide65 text-[15.61px] xl:text-[16.62px]">
                       777BTC: Revolutionising Raffles on
@@ -97,7 +116,7 @@ const Hero = () => {
             </div>
 
             {/* quote */}
-            <div className="w-full h-[140px] bg-primary rounded-es-[40px] rounded-ee-[40px] px-14 pt-5 hidden xl:flex gap-4 items-center relative -top-5 z-20 overflow-hidden">
+            <div className="quote-shaddow w-full h-[150px] bg-primary rounded-es-[40px] rounded-ee-[40px] px-14 pt-[25px] hidden xl:flex gap-4 items-center relative -top-5 z-20 overflow-hidden">
               <h4 className="text-[23px] text-black font-sequel100Wide95 text-center uppercase">
                 “A DOLLAR WON IS TWICE AS SWEET AS A DOLLAR EARNED”
               </h4>
@@ -107,7 +126,7 @@ const Hero = () => {
               <img
                 src={paul}
                 alt=""
-                className="w-auto h-auto absolute left-1/2 -translate-x-1/2 top-[-55px] bottom-0 z-[-1]"
+                className="w-auto h-auto absolute left-1/2 -translate-x-1/2 top-[-55px] bottom-0 z-[-1] mix-blend-overlay"
               />
             </div>
           </div>

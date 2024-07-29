@@ -1,6 +1,5 @@
 import React from "react";
 import cryptoBg from "../../../assets/images/coin2.jpg";
-import coin5 from "../../../assets/images/coin5.png";
 import Button from "../../ui/Button";
 
 const DailyGiveAways = () => {
@@ -19,24 +18,19 @@ const DailyGiveAways = () => {
           </p>
         </div>
 
-        <div className="overflow-hidden relative z-10 rounded-[25px]">
-          <img
-            src={cryptoBg}
-            alt=""
-            className="hidden lg:block w-full h-auto rounded-[25px]"
-          />
-          <img
-            src={coin5}
-            alt=""
-            className="block lg:hidden w-full h-auto rounded-[25px]"
-          />
-        </div>
+        <div className="overflow-hidden relative z-10  rounded-[20px] pb-[70%] lg:pb-[40%] mb-[10%] lg:mb-0">
+                <img
+                  src={cryptoBg}
+                  alt=""
+                  className="w-full h-full rounded-[20px] object-cover absolute top-0"
+                />
+              </div>
 
         <div className="pt-0 pb-10 lg:pt-10 lg:pb-10 w-[90%] mx-auto lg:mb-0">
           <h3 className="text-primary font-sequel100Wide95 text-xl lg:text-[35px] uppercase text-center mb-5 lg:mb-10">
             Get your tokens now, it could be you!
           </h3>
-          <Button bgColor="bg-primary" text="BUY NOW" />
+          <Button bgColor="bg-primary" text="BUY NOW" link="/price"/>
         </div>
       </div>
     </div>

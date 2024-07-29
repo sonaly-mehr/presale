@@ -18,12 +18,8 @@ const HowToBuy = () => {
 
         <div className="pl-6 lg:pl-28 pr-6 lg:pr-16 py-6 lg:py-14 text-white flex flex-col gap-8 text-[14px] lg:text-[22px]">
           <p className="font-sequel100Wide45">
-            $PRIZE can be purchased using BASE or USDT. Ensure you have a
-            sufficient amount of BASE OR USDT in your wallet before proceeding. {" "}
-          </p>
-          <p className="font-sequel100Wide45">
-            You can add BASE to your wallet via credit card through our partner
-            Transak.
+            $PRIZE can be purchased using BASE, ETH or USDT. Ensure you have a
+            sufficient amount of BASE, ETH OR USDT in your wallet before proceeding. {" "}
           </p>
           <div>
             <h5 className="font-sequel100Wide95 uppercase">

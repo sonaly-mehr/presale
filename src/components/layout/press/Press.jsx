@@ -5,9 +5,6 @@ import press3 from "../../../assets/images/press3.jpg";
 import logo1 from "../../../assets/images/logo1.png";
 import logo2 from "../../../assets/images/logo2.png";
 import logo3 from "../../../assets/images/logo3.png";
-import mobilePress1 from "../../../assets/images/press_mobile1.png";
-import mobilePress2 from "../../../assets/images/press_mobile2.png";
-import mobilePress3 from "../../../assets/images/press_mobile3.png";
 import Navbar from "../../ui/Navbar";
 import Footer from "../../ui/Footer";
 
@@ -18,16 +15,11 @@ const Press = () => {
       <div className="container mx-auto mb-14 mt-24 lg:mt-14">
         <h2 className="text-center heading mb-6 lg:mb-10">PRESS</h2>
         <div className="flex flex-col gap-10">
-          <div className="rounded-[20px] overflow-hidden relative w-full">
+          <div className="rounded-[20px] overflow-hidden relative w-full pb-[85%] md:pb-[70%] xl:pb-[55%]">
             <img
               src={press1}
               alt=""
-              className="w-full h-auto lg:h-[780px] rounded-[20px] hidden lg:block"
-            />
-            <img
-              src={mobilePress1}
-              alt=""
-              className="w-full h-auto rounded-[20px] block lg:hidden"
+              className="w-full h-full rounded-[20px] object-cover absolute top-0 object-bottom"
             />
             <div className="absolute press-content left-0 bottom-0 w-screen">
               <div className="relative z-4 left-5 lg:left-10 bottom-5 lg:bottom-10">
@@ -46,16 +38,11 @@ const Press = () => {
             </div>
           </div>
 
-          <div className="rounded-[20px] overflow-hidden relative w-full">
+          <div className="rounded-[20px] overflow-hidden relative w-full pb-[85%] md:pb-[70%] xl:pb-[55%]">
             <img
               src={press2}
               alt=""
-              className="w-full h-auto lg:h-[780px] rounded-[20px] hidden lg:block"
-            />
-            <img
-              src={mobilePress2}
-              alt=""
-              className="w-full h-auto rounded-[20px] block lg:hidden"
+              className="w-full h-full rounded-[20px] object-cover absolute top-0 object-bottom"
             />
             <div className="absolute press-content left-0 bottom-0 w-screen">
               <div className="relative z-4 left-5 lg:left-10 bottom-5 lg:bottom-10">
@@ -74,16 +61,11 @@ const Press = () => {
             </div>
           </div>
 
-          <div className="rounded-[20px] overflow-hidden relative w-full">
+          <div className="rounded-[20px] overflow-hidden relative w-full pb-[85%] md:pb-[70%] xl:pb-[55%]">
             <img
               src={press3}
               alt=""
-              className="w-full h-auto lg:h-[780px] rounded-[20px] hidden lg:block"
-            />
-            <img
-              src={mobilePress3}
-              alt=""
-              className="w-full h-auto rounded-[20px] block lg:hidden"
+              className="w-full h-full rounded-[20px] object-cover absolute top-0 object-bottom"
             />
             <div className="absolute press-content left-0 bottom-0 w-screen">
               <div className="relative z-4 left-5 lg:left-10 bottom-5 lg:bottom-10">

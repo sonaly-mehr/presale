@@ -7,11 +7,17 @@ import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 import MobileNav from "./MobileNav";
+import { FaTelegramPlane } from "react-icons/fa";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { IoLogoYoutube } from "react-icons/io";
+import { FaDiscord } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
   const [connect, setConnect] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [showWallet, setShowWallet] = useState(false);
+  const [showSOcialIcon, setShowSocialicon] = useState(false)
 
   const handleNav = () => {
     setShowMenu(!showMenu);
@@ -29,7 +35,7 @@ const Navbar = () => {
             />
           </a>
           <div>
-            <ul className="hidden lg:flex items-center gap-3 xl:gap-9">
+            <ul className={`hidden lg:flex items-center gap-3 ${connect? 'xl:gap-6': 'xl:gap-9'} pl-0 lg:pl-[10px] xl:pl-[6px]`}>
               {MENU?.map((item) => (
                 <li>
                   <NavLink
@@ -72,7 +78,7 @@ const Navbar = () => {
                 connect
                   ? "px-4 py-1.5 xl:px-8 xl:py-2.5"
                   : "px-5 xl:px-10 py-3 xl:py-[18px]"
-              } text-black text-[12.75px] font-sequel100Wide95 relative`}
+              } text-black text-[11px] 2xl:text-[12.75px] font-sequel100Wide95 relative`}
             >
               {connect ? (
                 <span className="flex flex-col">
@@ -92,7 +98,7 @@ const Navbar = () => {
               {/* Connected Wallet */}
 
               {connect && (
-                <div className="absolute top-[80px] xl:top-[120px] left-[-80px] right-0 w-[360px] bg-white rounded-[10px] z-40">
+                <div className="absolute top-[80px] xl:top-[108px] left-[-80px] right-0 w-[360px] bg-white rounded-[10px] z-40">
                   <div className="bg-primary rounded-ss-[10px] rounded-se-[10px] rounded-es-[15px] rounded-ee-[15px] w-full py-[22px] text-center">
                     <span className="font-montBlancSemiBold text-lg text-black">
                       0x7a1BcA9C3a1BB5aa9204…A47E
@@ -127,13 +133,28 @@ const Navbar = () => {
                 </div>
               )}
             </button>
-
-            <PiShareNetwork className="text-white border border-solid border-white rounded-full w-[50px] xl:w-[77px] h-[50px] xl:h-[77px] p-2 xl:p-5" />
-            <div className="w-[50px] xl:w-[77px] h-[50px] xl:h-[77px] rounded-full border border-solid border-primary p-2.5 flex justify-center items-center">
+            <div className="bg-white w-[19px] h-[19px] rounded-full flex justify-center items-center">
+              <MdKeyboardArrowDown className="text-secondary"/>
+            </div>
+            <PiShareNetwork className="text-white border border-solid border-white rounded-full w-[50px] 2xl:w-[77px] h-[50px] 2xl:h-[77px] p-2 2xl:p-5" />
+            <div className="relative w-[52px] 2xl:w-[78px] mx-auto" onClick={()=> setShowSocialicon(!showSOcialIcon)}>
+            <div className={`ease-in duration-500 shadow-[2px_4px_12.1px_0px_rgba(0,0,0,0.45)] absolute top-[-25px] 2xl:top-[-38px] bg-[#181818] ${showSOcialIcon ? 'h-[260px]' : 'xl:h-[50px] 2xl:h-[77px]'} cursor-pointer flex flex-col items-center gap-6 z-50 justify-center border border-solid border-white rounded-full w-[50px] 2xl:w-[77px] p-2 lg:p-[0.4rem] 2xl:p-5`}>
+            <FaTelegramPlane className={`transition duration-150 ease-in-out text-white text-3xl lg:text-4xl ${showSOcialIcon && 'hover:text-secondary'}`} />
+            {
+              showSOcialIcon && 
+            <div className="flex flex-col gap-6 items-center">
+            <IoLogoYoutube className="text-white text-3xl lg:text-4xl transition duration-150 ease-in-out hover:text-secondary" />
+            <FaXTwitter className="text-white text-3xl lg:text-4xl transition duration-150 ease-in-out hover:text-secondary" />
+            <FaDiscord className="text-white text-3xl lg:text-4xl transition duration-150 ease-in-out hover:text-secondary" />
+            </div>
+                        }
+            </div>
+            </div>
+            <div className="w-[50px] 2xl:w-[77px] h-[50px] 2xl:h-[77px] rounded-full border border-solid border-primary p-2.5 flex justify-center items-center">
               <img
                 src={flag}
                 alt=""
-                className="w-[35px] xl:w-[52px] h-[35px] xl:h-[52px]"
+                className="w-[35px] 2xl:w-[52px] h-[35px] 2xl:h-[52px]"
               />
             </div>
           </div>
@@ -141,7 +162,12 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <MobileNav showMenu={showMenu} showWallet={showWallet} setShowWallet={setShowWallet} handleNav={handleNav}/>
+      <MobileNav
+        showMenu={showMenu}
+        showWallet={showWallet}
+        setShowWallet={setShowWallet}
+        handleNav={handleNav}
+      />
     </nav>
   );
 };

@@ -71,7 +71,8 @@
 body {
   background: #2B2B2B;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -84,14 +85,20 @@ html{
 }
 
 .hero_shaddow {
-  box-shadow: 0px 150px 35px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.45);
+  /* box-shadow: 0px 31px 40px -9px rgba(0, 0, 0, 0.45); */
 }
+.quote-shaddow{
+  box-shadow: 0px 31px 40px -9px rgba(0, 0, 0, 1);
+}
+
+
 
 .rotate-text {
   animation: rotateText 25s linear infinite;
 }
 
-@keyframes rotateText {
+/* @keyframes rotateText {
   0% {
     transform: rotate(360deg);
   }
@@ -99,7 +106,7 @@ html{
   100% {
     transform: rotate(0deg);
   }
-}
+} */
 
 .faq-transition {
   transition: max-height 0.5s ease;
@@ -122,7 +129,8 @@ html{
   background: rgba(0, 0, 0, 0.5);
   height: 250px;
 }
-.mobile-nav:hover .hover-icon{
+
+.mobile-nav:hover .hover-icon {
   opacity: 1;
 }
 

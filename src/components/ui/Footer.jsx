@@ -82,18 +82,22 @@ const Footer = () => {
             </a>
              
           </p>
-          <ul className="flex gap-1 items-center">
+          <ul className="flex gap-1 items-center relative z-10">
             <li>
               <a
-                href="#"
-                className=" text-[11.5px] lg:text-[17.48px] underline font-montBlancRegular inline-block pr-1 border-r border-solid border-white"
+                href="https://777btc.gitbook.io/777btc-whitepaper/company-policies/cookie-policy"
+                target="_blank"
+                rel="noreferrer"
+                className="text-[11.5px] lg:text-[17.48px] underline font-montBlancRegular inline-block pr-1 border-r border-solid border-white"
               >
-                Refund Policy
+                Cookies Policy
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="https://777btc.gitbook.io/777btc-whitepaper/company-policies/privacy-policy"
+                target="_blank"
+                rel="noreferrer"
                 className="  text-[11.5px] lg:text-[17.48px] underline font-montBlancRegular inline-block pr-1 pl-1 border-r border-solid border-white"
               >
                 Privacy Policy
@@ -101,7 +105,9 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+href="https://777btc.gitbook.io/777btc-whitepaper/company-policies/terms-and-conditions"
+target="_blank"
+rel="noreferrer"
                 className="  text-[11.5px] lg:text-[17.48px] underline font-montBlancRegular"
               >
                 Terms & Conditions

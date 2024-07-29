@@ -40,7 +40,7 @@ const About = () => {
             </ul>
 
             <div className="mt-[300px] lg:mt-24">
-              <Button text="BUY NOW" bgColor="bg-primary" />
+              <Button text="BUY NOW" bgColor="bg-primary" link="/price"/>
             </div>
             <p className="font-sequel100Wide65 text-[12px] lg:text-[22px] leading-4 lg:leading-[30px] text-primary text-center pt-10 lg:pt-14 lg:w-[85%] mx-auto">
               Join the Action Get your $PRIZE tokens, dive into our giveaways,

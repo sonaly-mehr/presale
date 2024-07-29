@@ -29,7 +29,7 @@ const Platform = () => {
               <img
                 src={phone}
                 alt=""
-                className="block md:hidden w-auto h-[350px] md:h-auto absolute bottom-0 left-0"
+                className="block md:hidden w-auto h-[350px] md:h-auto absolute bottom-0 left-1/2 translate-x-[-50%]"
               />
             </div>
           </div>

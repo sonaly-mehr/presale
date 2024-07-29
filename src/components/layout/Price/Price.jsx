@@ -1,8 +1,7 @@
 import React from "react";
 import { WHY_ENTER } from "../../../constants";
 import listDisc from "../../../assets/images/listDisc.svg";
-import cryptoBg from "../../../assets/images/price-crypto.jpg";
-import coin3 from "../../../assets/images/coin3.png";
+import cryptoBg from "../../../assets/images/coin1.jpg";
 import tokenLogo from "../../../assets/images/price_TokenLogo.png";
 import paul from "../../../assets/images/paul.svg";
 import HowToParticipate from "./HowToParticipate";
@@ -29,16 +28,11 @@ const Price = () => {
             </div>
 
             <div className="bg-dark rounded-[20px]">
-              <div className="overflow-hidden relative z-10  rounded-[20px]">
+              <div className="overflow-hidden relative z-10  rounded-[20px] pb-[70%] lg:pb-[40%]">
                 <img
                   src={cryptoBg}
                   alt=""
-                  className="w-full h-auto rounded-[20px] hidden md:block"
-                />
-                <img
-                  src={coin3}
-                  alt=""
-                  className="w-full h-auto rounded-[20px]  md:hidden"
+                  className="w-full h-full rounded-[20px] object-cover absolute top-0"
                 />
               </div>
 
@@ -100,7 +94,7 @@ const Price = () => {
             <img
               src={paul}
               alt=""
-              className="w-auto h-auto absolute left-1/2 -translate-x-1/2 top-[30px] lg:top-[-55px] bottom-0 z-[-1]"
+              className="w-auto h-auto absolute left-1/2 -translate-x-1/2 top-[30px] lg:top-[-55px] bottom-0 z-[-1] mix-blend-overlay"
             />
           </div>
         </div>
