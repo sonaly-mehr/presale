@@ -70,8 +70,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-white leading-[18.08px] lg:leading-[27.5px] flex flex-col-reverse lg:flex-row justify-between items-center pt-10 lg:pt-20 pb-0 lg:pb-10">
-          <p className="font-montBlancRegular  text-[9px] lg:text-[17.48px] mt-1 lg:mt-0">
+        <div className="text-white leading-[18.08px] lg:leading-[27.5px] flex flex-col-reverse lg:flex-row justify-normal lg:justify-between items-center pt-10 lg:pt-20 pb-0 lg:pb-10">
+          <p className="font-montBlancRegular  text-[9px] lg:text-[17.48px] mt-1 lg:mt-0 text-center lg:text-left">
             © Copyright 2024 | All Rights Reserved. Powered by{" "}
             <a
               href="https://www.hiltonwebdesign.com/"
