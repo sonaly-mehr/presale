@@ -24,7 +24,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#181818] lg:bg-opacity-0 py-[17px] lg:py-0 fixed lg:static top-0 left-0 right-0 z-[100]">
+    <nav className="bg-[#181818] lg:bg-opacity-0 py-[17px] lg:py-0 ">
+      {/* fixed lg:static top-0 left-0 right-0 z-[100] */}
       <div className="lg:mt-10 container mx-auto">
         <div className="lg:bg-[#181818] rounded-[50px] lg:p-3 flex justify-between items-center">
           <a href="/">

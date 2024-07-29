@@ -17,7 +17,7 @@ const MobileNav = ({ showMenu, handleNav, showWallet, setShowWallet }) => {
         <div
           className={
             showMenu
-              ? "md:hidden fixed left-0 top-[78px] w-full h-screen bg-black/70"
+              ? "md:hidden absolute left-0 top-[7px] w-full h-[705rem] bg-black/70"
               : ""
           }
         >
@@ -26,7 +26,7 @@ const MobileNav = ({ showMenu, handleNav, showWallet, setShowWallet }) => {
             className={
               showMenu
                 ? " md:hidden absolute top-0 left-0 right-0 w-full h-auto bg-[#2E2E2E] pt-5 ease-in duration-500"
-                : "md:hidden absolute top-[-800px] p-10 left-0 right-0 ease-in duration-500 w-full h-auto"
+                : "md:hidden absolute top-[-1500px] p-10 left-0 right-0 ease-in duration-500 w-full h-auto"
             }
           >
             <div className="pl-8 pr-5 py-4">
@@ -160,30 +160,32 @@ const MobileNav = ({ showMenu, handleNav, showWallet, setShowWallet }) => {
                 className={
                   showWallet
                     ? " absolute top-[63px] left-0 right-0 w-full h-auto bg-[#2E2E2E]  ease-in duration-500"
-                    : "fixed top-[-100%] left-0 p-10 ease-in duration-500 w-full h-screen"
+                    : "fixed top-[-100%] left-0 p-10 ease-in duration-500 w-full h-full"
                 }
               >
-                <div className="rounded-ss-[33px] rounded-se-[33px] bg-[#3B3B3B] pt-3 m-4">
+                <div className="rounded-ss-[33px] rounded-se-[33px] bg-[#3B3B3B] m-6">
+                  <div className="pt-8 pb-6">
                   <img
                     src={tokenLogoMobile}
                     alt=""
-                    className="w-[100px] h-[100px] mx-auto"
+                    className="w-[200px] h-[200px] mx-auto"
                   />
+                                    </div>
                   <div className="w-full bg-white rounded-[10px] mt-3">
-                    <div className="bg-primary rounded-ss-[10px] rounded-se-[10px] rounded-es-[15px] rounded-ee-[15px] w-full py-2.5 text-center">
-                      <span className="font-montBlancSemiBold text-[15px] text-black">
+                    <div className="bg-primary rounded-ss-[10px] rounded-se-[10px] rounded-es-[15px] rounded-ee-[15px] w-full py-4 text-center">
+                      <span className="font-montBlancSemiBold text-base text-black">
                         0x7a1BcA9C3a1BB5aa9204…A47E
                       </span>
                     </div>
-                    <div className="px-6 py-3.5">
-                      <span className="block text-left font-sequel100Wide65 text-[11px] text-black uppercase mb-2">
+                    <div className="px-6 pt-5 pb-7">
+                      <span className="block text-left font-sequel100Wide65 text-xs text-black uppercase mb-3">
                         Balance
                       </span>
-                      <div className="flex justify-between text-black font-sequel100Wide95 text-sm uppercase">
+                      <div className="flex justify-between text-black font-sequel100Wide95 text-base uppercase">
                         <h5 className="">$PRIZE</h5>
                         <h5>9,999.999</h5>
                       </div>
-                      <button className="w-full mt-4 mb-3 text-white bg-secondary rounded-[10px] font-sequel100Wide95 text-[13px] uppercase py-2 text-center">
+                      <button className="w-full mt-4 mb-6 text-white bg-secondary rounded-[10px] font-sequel100Wide95 text-[13px] uppercase py-2 text-center">
                         BUY $PRIZE
                       </button>
                       <div className="flex justify-between items-center">
