@@ -7,8 +7,94 @@ import pieChart from "../../../assets/images/pieChart.png";
 import { PRICING, TOKENOMICS } from "../../../constants";
 import chartBgMobile from "../../../assets/images/chart-mobile.png";
 import lock from "../../../assets/images/lock.png";
+import { useTimer } from "react-timer-hook";
+
+function MyTimer({ expiryTimestamp }) {
+  const {
+    totalSeconds,
+    seconds,
+    minutes,
+    hours,
+    days,
+    isRunning,
+    start,
+    pause,
+    resume,
+    restart,
+  } = useTimer({
+    expiryTimestamp,
+    onExpire: () => console.warn("onExpire called"),
+  });
+
+  const formatTime = (time) => {
+    return String(time).padStart(2, "0");
+  };
+  let day = formatTime(days);
+  let hour = formatTime(hours);
+  let minute = formatTime(minutes);
+
+  return (
+    <div className="flex gap-1.5 lg:gap-6 mt-0 lg:mt-4 mb-1 lg:mb-0">
+      <div className="flex-1">
+        <div>
+          <div className="flex gap-1.5 lg:gap-4 items-center mb-[-5px] lg:mb-0">
+            <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
+              {day.charAt(0)}
+            </span>
+            <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
+              {day.charAt(1)}
+            </span>
+            <div className="flex flex-col gap-1 lg:gap-2 items-center pl-0 lg:pl-2">
+              <span className="block bg-white w-1 lg:w-3 h-1 lg:h-[10px]"></span>
+              <span className="block bg-white w-1 lg:w-3 h-1 lg:h-[10px]"></span>
+            </div>
+          </div>
+          <span className="text-white font-montBlancSemiBold text-[6.89px] lg:text-[24.72px] inline-block lg:mt-2">
+            DAYS
+          </span>
+        </div>
+      </div>
+      <div className="flex-1">
+        <div>
+          <div className="flex gap-1.5 lg:gap-4 items-center mb-[-5px] lg:mb-0">
+            <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
+              {hour.charAt(0)}
+            </span>
+            <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
+              {hour.charAt(1)}
+            </span>
+            <div className="flex flex-col gap-1 lg:gap-2 items-center pl-0 lg:pl-2">
+              <span className="block bg-white w-1 lg:w-3 h-1 lg:h-[10px]"></span>
+              <span className="block bg-white w-1 lg:w-3 h-1 lg:h-[10px]"></span>
+            </div>
+          </div>
+          <span className="text-white font-montBlancSemiBold text-[6.89px] lg:text-[24.72px] inline-block lg:mt-2">
+            HOURS
+          </span>
+        </div>
+      </div>
+      <div className="flex-1">
+        <div>
+          <div className="flex gap-1.5 lg:gap-4 items-center mb-[-5px] lg:mb-0">
+            <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
+              {minute.charAt(0)}
+            </span>
+            <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
+              {minute.charAt(1)}
+            </span>
+          </div>
+          <span className="text-white font-montBlancSemiBold text-[6.89px] lg:text-[24.72px] inline-block lg:mt-2">
+            MINS
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 const PresalePrice = () => {
+  const time = new Date();
+  time.setHours(time.getHours() + 600);
   return (
     <div className="container mx-auto">
       <div className="bg-[#1B1B1B] rounded-[20px] py-8 xl:py-20 px-4 xl:px-24">
@@ -63,62 +149,7 @@ const PresalePrice = () => {
           <h2 className="font-sequel100Wide95 leading-[35.4px] lg:leading-normal text-white text-[11.15px] lg:text-[40px]">
             TIME UNTIL NEXT GIVEAWAY
           </h2>
-          {/* <Timer duration={600}/> */}
-          <div className="flex gap-1.5 lg:gap-6 mt-0 lg:mt-4 mb-1 lg:mb-0">
-            <div className="flex-1">
-              <div>
-                <div className="flex gap-1.5 lg:gap-4 items-center mb-[-5px] lg:mb-0">
-                  <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
-                    1
-                  </span>
-                  <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
-                    2
-                  </span>
-                  <div className="flex flex-col gap-1 lg:gap-2 items-center pl-0 lg:pl-2">
-                    <span className="block bg-white w-1 lg:w-3 h-1 lg:h-[10px]"></span>
-                    <span className="block bg-white w-1 lg:w-3 h-1 lg:h-[10px]"></span>
-                  </div>
-                </div>
-                <span className="text-white font-montBlancSemiBold text-[6.89px] lg:text-[24.72px] inline-block lg:mt-2">
-                  DAYS
-                </span>
-              </div>
-            </div>
-            <div className="flex-1">
-              <div>
-                <div className="flex gap-1.5 lg:gap-4 items-center mb-[-5px] lg:mb-0">
-                  <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
-                    1
-                  </span>
-                  <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
-                    2
-                  </span>
-                  <div className="flex flex-col gap-1 lg:gap-2 items-center pl-0 lg:pl-2">
-                    <span className="block bg-white w-1 lg:w-3 h-1 lg:h-[10px]"></span>
-                    <span className="block bg-white w-1 lg:w-3 h-1 lg:h-[10px]"></span>
-                  </div>
-                </div>
-                <span className="text-white font-montBlancSemiBold text-[6.89px] lg:text-[24.72px] inline-block lg:mt-2">
-                  HOURS
-                </span>
-              </div>
-            </div>
-            <div className="flex-1">
-              <div>
-                <div className="flex gap-1.5 lg:gap-4 items-center mb-[-5px] lg:mb-0">
-                  <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
-                    1
-                  </span>
-                  <span className="flex justify-center bg-white py-1 lg:py-1.5 w-full rounded-[10px] font-montBlancBlack text-[14.7px] lg:text-[52.71px] text-[#2E2122]">
-                    2
-                  </span>
-                </div>
-                <span className="text-white font-montBlancSemiBold text-[6.89px] lg:text-[24.72px] inline-block lg:mt-2">
-                  MINS
-                </span>
-              </div>
-            </div>
-          </div>
+          <MyTimer expiryTimestamp={time} />
         </div>
 
         {/* More INFO */}

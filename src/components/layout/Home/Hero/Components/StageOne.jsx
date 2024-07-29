@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import progress from "../../../../../assets/images/progress.png";
 
 const StageOne = () => {
+  const [selectCurrency, setSelectedCurrency] = useState('USDT')
   return (
     <div className="bg-primary border-[2px] border-solid border-white rounded-xl px-3 lg:px-6 pt-4 lg:pt-7 pb-4 lg:pb-8 text-center">
       <h2 className="text-dark font-sequel100Wide95 text-[34.44px] lg:text-[46.57px]">
@@ -35,13 +36,13 @@ const StageOne = () => {
         <span className="text-primary">75,000.000</span> REMAIN
       </h6>
       <div className="flex gap-3 mt-2 font-sequel100Wide95 text-[12.4px] lg:text-[16.76px]">
-        <button className="flex-1 rounded-[8px] lg:rounded-xl border border-solid border-black py-2 lg:py-3 text-black  text-center w-full">
+        <button onClick={()=> setSelectedCurrency('ETH')} className={`${selectCurrency ==='ETH' ? 'bg-secondary text-white' : 'border border-solid border-black text-black'} flex-1 rounded-[8px] lg:rounded-xl py-2 lg:py-3  text-center w-full`}>
           ETH
         </button>
-        <button className="flex-1 rounded-[8px] lg:rounded-xl bg-secondary py-2 lg:py-3 text-white text-center w-full">
+        <button onClick={()=> setSelectedCurrency('USDT')} className={`${selectCurrency ==='USDT' ? 'bg-secondary text-white' : 'border border-solid border-black text-black'} flex-1 rounded-[8px] lg:rounded-xl py-2 lg:py-3 text-center w-full`}>
           USDT
         </button>
-        <button className="flex-1 rounded-[8px] lg:rounded-xl border border-solid border-black py-2 lg:py-3 text-black text-center w-full">
+        <button onClick={()=> setSelectedCurrency('BASE')}  className={`${selectCurrency ==='BASE' ? 'bg-secondary text-white' : 'border border-solid border-black text-black'} flex-1 rounded-[8px] lg:rounded-xlpy-2 lg:py-3 text-center w-full`}>
           BASE
         </button>
       </div>
