@@ -3,6 +3,10 @@ import tokenLogo from "../../assets/images/777_TokenLogo_nnav.png";
 import tokenLogoMobile from "../../assets/images/tokenLogoMobile.png";
 import { BiSolidLeftArrow } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
+import { FaTelegramPlane } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io";
+import { FaDiscord } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const MobileNav = ({ showMenu, handleNav, showWallet, setShowWallet }) => {
   const [selected, setSelected] = useState(false);
@@ -25,7 +29,8 @@ const MobileNav = ({ showMenu, handleNav, showWallet, setShowWallet }) => {
                 : "md:hidden absolute top-[-800px] p-10 left-0 right-0 ease-in duration-500 w-full h-auto"
             }
           >
-            <ul className="flex flex-col gap-4 pl-5 pr-5 py-4">
+            <div className="pl-8 pr-5 py-4">
+            <ul className="flex flex-col gap-5">
               <li className="mobile-nav" onClick={handleNav}>
                 <NavLink
                   to="https://777btc.gitbook.io/777btc-whitepaper/"
@@ -130,6 +135,15 @@ const MobileNav = ({ showMenu, handleNav, showWallet, setShowWallet }) => {
               </li>
             </ul>
 
+            {/* SOCIAL LINK */}
+            <ul className="flex items-center gap-3.5 relative z-[100] mt-7">
+              <li className="w-11 h-11 bg-secondary rounded-lg flex justify-center items-center"><a href="/" className=""><FaTelegramPlane className="text-white text-3xl"/></a></li>
+              <li className="w-11 h-11 bg-secondary rounded-lg flex justify-center items-center"><a href="/" className=""><FaXTwitter className="text-white text-3xl"/></a></li>
+              <li className="w-11 h-11 bg-secondary rounded-lg flex justify-center items-center"><a href="/" className=""><FaDiscord className="text-white text-3xl"/></a></li>
+              <li className="w-11 h-11 bg-secondary rounded-lg flex justify-center items-center"><a href="/" className=""><IoLogoYoutube className="text-white text-3xl"/></a></li>
+            </ul>
+            </div>
+
             <div
               className={`bg-primary py-5 w-full mt-5 ${
                 !showWallet && "rounded-es-[20px] rounded-ee-[20px"
@@ -183,7 +197,7 @@ const MobileNav = ({ showMenu, handleNav, showWallet, setShowWallet }) => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-secondary py-2.5 w-full mt-0 rounded-es-[20px] rounded-ee-[20px]">
+                <div className="bg-secondary py-5 w-full mt-0 rounded-es-[20px] rounded-ee-[20px]">
                   <h4
                     className="text-[15px] uppercase font-sequel100Wide95 text-black text-center cursor-pointer"
                     onClick={() => setShowWallet(!showWallet)}
