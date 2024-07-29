@@ -12,7 +12,7 @@ const Press = () => {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto mb-14 mt-24 lg:mt-14">
+      <div className="container mx-auto mb-14 mt-10 lg:mt-14">
         <h2 className="text-center heading mb-6 lg:mb-10">PRESS</h2>
         <div className="flex flex-col gap-10">
           <div className="rounded-[20px] overflow-hidden relative w-full pb-[85%] md:pb-[70%] xl:pb-[55%]">

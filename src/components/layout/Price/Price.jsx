@@ -15,7 +15,7 @@ const Price = () => {
     <div>
       <Navbar />
       <div className="container mx-auto price-section">
-        <div className=" h-auto lg:rounded-3xl mt-[100px] lg:mt-10">
+        <div className=" h-auto lg:rounded-3xl mt-4 lg:mt-10">
           <div className="lg:bg-dark rounded-[20px]">
             <div className="text-center h-auto  lg:bg-dark px-4 py-8 lg:py-16 rounded-[20px] lg:rounded-3xl relative lg:static z-[10]">
               <h2 className="heading pb-6">$PRIZE’S</h2>
